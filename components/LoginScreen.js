@@ -14,7 +14,7 @@ export default class Login extends Component {
         this.setState({ text: newText});
     }
 
-    onChnagePassword = (newPassword) => {
+    onChangePassword = (newPassword) => {
         this.setState({ password: newPassword});
     }
 
@@ -35,7 +35,7 @@ export default class Login extends Component {
                         <TextInput
                             placeholder="password"
                             value={this.state.password}
-                            onChangeText={this.onChnagePassword}
+                            onChangeText={this.onChangePassword}
                         />
                     </View>
                 </View>
