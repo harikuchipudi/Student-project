@@ -9,7 +9,7 @@ export default class HomeScreen extends Component {
     state = {
         index: 0,
         routes: [
-            {key: ''  }
+            {key: '' }
         ]
     }
 

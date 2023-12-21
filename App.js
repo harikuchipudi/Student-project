@@ -13,9 +13,9 @@ class App extends Component{
   render() {
     return(
     <NavigationContainer>
-      <SafeAreaView style={{ flex: 1}}>
+      <SafeAreaView style={{flex: 1}}>
         <Stack.Navigator initialRouteName='Login'>
-          <Stack.Screen name='Login' component={LoginScreen}/>
+          <Stack.Screen name='Login' component={LoginScreen} options={{headerShown: false}}/>
         </Stack.Navigator>
       </SafeAreaView>
     </NavigationContainer>
