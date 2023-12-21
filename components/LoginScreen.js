@@ -8,7 +8,7 @@ export default class Login extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            text: '',
+            text: '', 
             password: ''
         };
     }
@@ -20,7 +20,6 @@ export default class Login extends Component {
     onChangePassword = (newPassword) => {
         this.setState({ password: newPassword});
     }
-
 
 
     render()
