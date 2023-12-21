@@ -15,7 +15,7 @@ export default class Login extends Component {
 
     onChangeText = (newText) => {
         this.setState({ text: newText});
-    }
+    } 
 
     onChangePassword = (newPassword) => {
         this.setState({ password: newPassword});
