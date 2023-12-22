@@ -2,12 +2,12 @@ import React from "react";
 import { TouchableOpacity, Text, StyleSheet } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
-const CustomButton = ({ title, onSubmit, buttonStyle, textStyle}) => {
+const CustomButton = ({ title, onSubmit, buttonStyle, textStyle, route}) => {
     const navigation = useNavigation();
 
     const onPress = () => {
         return(
-            navigation.navigate("HomeScreen")
+            navigation.navigate(route)
         );
     };
 

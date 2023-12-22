@@ -44,7 +44,7 @@ export default class Login extends Component {
                                 style={styles.input}
                             />
                         </View>
-                        <CustomButton title="submit">
+                        <CustomButton title="submit" route={"HomeScreen"}>
                         </CustomButton>
                     </View>
                 </View>
