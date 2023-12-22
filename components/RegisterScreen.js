@@ -9,7 +9,8 @@ export default class Login extends Component {
         super(props);
         this.state = {
             text: '', 
-            password: ''
+            password: '',
+            Repassword: '',
         };
     }
 
@@ -20,13 +21,16 @@ export default class Login extends Component {
     onChangePassword = (newPassword) => {
         this.setState({ password: newPassword});
     }
+    onChangeRePassword = (newRePassword) => {
+        this.setState({ Repassword: newRePassword});
+    }
 
 
     render()
     {
         return (
                 <View style={styles.container}>
-                    <Text style={styles.title}>Login</Text>
+                    <Text style={styles.title}>Register</Text>
                     <View style={styles.LoginForm}>
                         <View style={styles.inputElement} >
                             <TextInput 
@@ -44,10 +48,18 @@ export default class Login extends Component {
                                 style={styles.input}
                             />
                         </View>
-                        <CustomButton title="submit" route={"HomeScreen"}>
+                        <View style={styles.inputElement}>
+                            <TextInput
+                                placeholder="re-enter password"
+                                value={this.state.Repassword}
+                                onChangeText={this.onChangeRePassword}
+                                style={styles.input}
+                            />
+                        </View>
+                        <CustomButton title="Register" route={"LoginScreen"}>
                         </CustomButton>
                         <View style={styles.paddin}></View>
-                        <CustomButton title="Create new account" route={"RegisterScreen"}>
+                        <CustomButton title="Already Registered!   Login" route={"LoginScreen"}>
                         </CustomButton>
                     </View>
                 </View>
