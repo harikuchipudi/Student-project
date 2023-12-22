@@ -1,16 +1,29 @@
 import React from "react";
 import { TouchableOpacity, Text, StyleSheet } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
-const CustomButton = ({ title, onPress, buttonStyle, textStyle}) => {
+
+
+
+const CustomButton = ({ title, onSubmit, buttonStyle, textStyle}) => {
+    const navigation = useNavigation();
+
+    const onPress = () => {
+        return(
+            navigation.navigate("HomeScreen")
+        );
+    };
+
     return(
         <TouchableOpacity
             style={[styles.button, buttonStyle]}
-            onPress={onPress}
+            onPress={onSubmit || onPress}
             activeOpacity={0.8}>
             <Text style={[styles.text, textStyle]}>{title}</Text>        
         </TouchableOpacity>
     );
 };
+
 
 const styles = StyleSheet.create({
      button: {
