@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import { View, Text, StyleSheet, TextInput, } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import CustomButton from "./ButtonTemplates";
+import NoStyleButton from "./NoStyleButton";
 
 
 export default class Login extends Component {
@@ -46,9 +47,8 @@ export default class Login extends Component {
                         </View>
                         <CustomButton title="submit" route={"HomeScreen"}>
                         </CustomButton>
-                        <View style={styles.paddin}></View>
-                        <CustomButton title="Create new account" route={"RegisterScreen"}>
-                        </CustomButton>
+                        <NoStyleButton title="Create new account" route={"RegisterScreen"}>
+                        </NoStyleButton>
                     </View>
                 </View>
         )
