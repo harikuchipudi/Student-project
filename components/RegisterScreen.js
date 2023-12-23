@@ -35,7 +35,7 @@ export default class Login extends Component {
                     <View style={styles.LoginForm}>
                         <View style={styles.inputElement} >
                             <TextInput 
-                                placeholder="username"
+                                placeholder="Username"
                                 value={this.state.text}
                                 onChangeText={this.onChangeText}
                                 style={styles.input}
@@ -43,7 +43,7 @@ export default class Login extends Component {
                         </View>
                         <View style={styles.inputElement}>
                             <TextInput
-                                placeholder="password"
+                                placeholder="Password"
                                 value={this.state.password}
                                 onChangeText={this.onChangePassword}
                                 style={styles.input}
@@ -51,7 +51,7 @@ export default class Login extends Component {
                         </View>
                         <View style={styles.inputElement}>
                             <TextInput
-                                placeholder="re-enter password"
+                                placeholder="Re-Enter Password"
                                 value={this.state.Repassword}
                                 onChangeText={this.onChangeRePassword}
                                 style={styles.input}

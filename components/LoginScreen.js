@@ -31,7 +31,7 @@ export default class Login extends Component {
                     <View style={styles.LoginForm}>
                         <View style={styles.inputElement} >
                             <TextInput 
-                                placeholder="username"
+                                placeholder="Username"
                                 value={this.state.text}
                                 onChangeText={this.onChangeText}
                                 style={styles.input}
@@ -39,13 +39,13 @@ export default class Login extends Component {
                         </View>
                         <View style={styles.inputElement}>
                             <TextInput
-                                placeholder="password"
+                                placeholder="Password"
                                 value={this.state.password}
                                 onChangeText={this.onChangePassword}
                                 style={styles.input}
                             />
                         </View>
-                        <CustomButton title="submit" route={"HomeScreen"}>
+                        <CustomButton title="Submit" route={"HomeScreen"}>
                         </CustomButton>
                         <NoStyleButton title="Create new account" route={"RegisterScreen"}>
                         </NoStyleButton>
