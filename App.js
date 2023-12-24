@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import LoginScreen from './components/LoginScreen';
 import HomeScreen from './components/HomeScreen';
 import ProjectScreen from './components/ProjectScreen';
+import RegisterScreen from './components/RegisterScreen';
 import React, { Component } from 'react';
 
 const Stack = createStackNavigator();
@@ -18,6 +19,7 @@ class App extends Component{
           <Stack.Screen name='LoginScreen' component={LoginScreen} options={{headerShown: false}}/>
           <Stack.Screen name='HomeScreen' component={HomeScreen} options={{headerShown: false}}/>
           <Stack.Screen name='ProjectScreen' component={ProjectScreen} options={{headerShown: false}}/>
+          <Stack.Screen name='RegisterScreen' component={RegisterScreen} options={{headerShown: false}}/>
         </Stack.Navigator>
       </SafeAreaView>
     </NavigationContainer>
