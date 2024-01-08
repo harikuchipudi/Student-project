@@ -15,7 +15,7 @@ const HomeContent = () => (
 )
 
 
-export default class HomeScreen extends Component {
+export default class HomeScreen extends Component { 
     state = {
         index: 0,
         routes: [
